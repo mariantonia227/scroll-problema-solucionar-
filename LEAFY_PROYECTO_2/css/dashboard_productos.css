@@ -1,0 +1,231 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    display: flex;
+    background-color: #f4f6f9;
+}
+
+/* ================= SIDEBAR ================= */
+
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    background-color: #8ebf32db;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 18px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+    color: #d7e8ab;
+}
+
+/* ================= MAIN ================= */
+
+.main {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ================= TOPBAR ================= */
+
+.topbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.user-menu {
+    position: relative;
+}
+
+.user-trigger {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.perfil-img {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Dropdown */
+
+.dropdown {
+    position: absolute;
+    top: 45px;
+    right: 0;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    min-width: 160px;
+    z-index: 1000;
+}
+
+.dropdown a {
+    padding: 12px;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown a:hover {
+    background: #f4f6f9;
+}
+
+.dropdown.active {
+    display: flex;
+}
+
+/* ================= TITULO NEGOCIO ================= */
+
+.negocio-nombre {
+    margin-bottom: 20px;
+    color: #6da123;
+}
+
+/* ================= HEADER PRODUCTOS ================= */
+
+.productos-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.btn-nuevo {
+    background: #8ebf32db;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn-nuevo:hover {
+    opacity: 0.85;
+}
+
+/* ================= FILTROS ================= */
+
+.productos-filtros {
+    margin-bottom: 20px;
+}
+
+.productos-filtros input {
+    padding: 8px;
+    width: 250px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* ================= TABLA ================= */
+
+.tabla-productos {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.05);
+}
+
+.tabla-productos tbody tr:hover {
+    background-color: #f9fafb;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background: #f4f6f9;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+tr:not(:last-child) {
+    border-bottom: 1px solid #eee;
+}
+
+/* ================= ESTADOS ================= */
+
+.estado {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.estado.activo {
+    background: #d4edda;
+    color: #155724;
+}
+
+.estado.inactivo {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+/* ================= BOTONES ACCIONES ================= */
+
+.btn-editar {
+    background: #3498db;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 13px;
+    margin-right: 5px;
+}
+
+.btn-eliminar {
+    background: #e74c3c;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.sin-pedidos {
+    text-align: center;
+    padding: 20px 0;   /* más pequeño */
+    font-size: 16px;
+    color: #777;
+}

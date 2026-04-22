@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    background-color: #f4f6f9;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    background-color: #8ebf32db;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 18px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+    color: #d7e8ab;
+}
+
+/* Main */
+.main {
+    flex: 1;
+    padding: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.topbar {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.user-menu {
+    position: relative;
+}
+
+.user-trigger {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.perfil-img {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+}
+
+.dropdown {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    min-width: 160px;
+    z-index: 1000;
+}
+
+.dropdown a {
+    padding: 12px;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown a:hover {
+    background: #f4f6f9;
+}
+
+/* clase activa */
+.dropdown.active {
+    display: flex;
+}
+
+
+
+
+
+.negocio-nombre {
+    margin-bottom: 20px;
+    color: #6da123;
+}
+
+
+
+
+
+
+.pedidos-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+
+
+.productos-filtros {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.productos-filtros input {
+    padding: 10px 14px;
+    width: 280px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    transition: 0.3s;
+    outline: none;
+}
+
+.productos-filtros input:focus {
+    border-color: #8ebf32db;
+    box-shadow: 0 0 0 3px rgba(142, 191, 50, 0.15);
+}
+
+
+
+
+
+/* Tarjeta contenedora */
+.tabla-pedidos {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+    overflow-x: auto;
+}
+
+/* Tabla */
+.tabla-pedidos table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Encabezados */
+.tabla-pedidos th {
+    text-align: left;
+    padding: 14px;
+    font-size: 14px;
+    color: #666;
+    background-color: #f4f6f9;
+}
+
+/* Celdas */
+.tabla-pedidos td {
+    padding: 14px;
+    border-top: 1px solid #eee;
+    font-size: 14px;
+}
+
+/* Hover */
+.tabla-pedidos tbody tr:hover {
+    background-color: #f9fafb;
+}
+
+/* Estados */
+.estado {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Pendiente */
+.estado.pendiente {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+/* Enviado */
+.estado.enviado {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+/* Entregado */
+.estado.entregado {
+    background-color: #d1ecf1;
+    color: #0c5460;
+}
+
+/* Cancelado */
+.estado.cancelado {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Botones */
+.btn-ver,
+.btn-cambiar {
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 13px;
+    margin-right: 6px;
+    transition: 0.2s;
+}
+
+.sin-pedidos {
+    text-align: center;
+    padding: 40px 0;
+    color: #777;
+    font-size: 16px;
+}
+
+/* Ver */
+.btn-ver {
+    background-color: #e9f5db;
+    color: #6da126;
+}
+
+.btn-ver:hover {
+    background-color: #d7e8ab;
+}
+
+/* Cambiar estado */
+.btn-cambiar {
+    background-color: #8ebf32db;
+    color: white;
+}
+
+.btn-cambiar:hover {
+    background-color: #6da126;
+}
